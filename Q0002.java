@@ -17,8 +17,6 @@ public class Q0002 {
         System.out.print(listNode.val);
         if (listNode.next != null) {
             printListNode(listNode.next);
-        } else {
-            return;
         }
     }
 
@@ -60,9 +58,10 @@ class Solution {
         int value1 = (l1 == null) ? 0 : l1.val;
         int value2 = (l2 == null) ? 0 : l2.val;
         int sums = value1 + value2 + save;
-        int gewei = sums % 10;
+
+        int digits = sums % 10;
         save = sums / 10;
-        listNode.val = gewei;
+        listNode.val = digits;
         if ((l1 != null && l1.next != null) || (l2 != null && l2.next != null) || save != 0) {
             ListNode newListcode = new ListNode(0, null);
             listNode.next = newListcode;
@@ -76,13 +75,6 @@ class Solution {
 class ListNode {
     int val;
     ListNode next;
-
-    ListNode() {
-    }
-
-    ListNode(int val) {
-        this.val = val;
-    }
 
     ListNode(int val, ListNode next) {
         this.val = val;
