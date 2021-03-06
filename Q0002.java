@@ -3,7 +3,7 @@ package com.veeja.leetCode;
 /**
  * @Author veeja
  */
-public class Q002 {
+public class Q0002 {
 
     public static void main(String[] args) {
         Solution solution = new Solution();
