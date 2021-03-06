@@ -6,7 +6,7 @@ import java.util.HashSet;
  * @Author veeja
  * 2021/2/2 15:29
  */
-public class Q005 {
+public class Q0005 {
 
     public static void main(String[] args) {
         // System.out.println(longestPalindrome("bababd"));

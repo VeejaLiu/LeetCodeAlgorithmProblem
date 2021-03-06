@@ -7,7 +7,7 @@ import java.util.Map;
  * @Author veeja
  * 2021/1/31 12:52
  */
-public class Q003 {
+public class Q0003 {
 
     public static void main(String[] args) {
 

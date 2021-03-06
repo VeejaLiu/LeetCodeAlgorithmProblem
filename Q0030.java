@@ -24,7 +24,7 @@ import java.util.List;
  * @Author veeja
  * 2021/1/28 19:42
  */
-public class Q030 {
+public class Q0030 {
 
     public static void main(String[] args) {
 

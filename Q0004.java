@@ -4,7 +4,7 @@ package com.veeja.leetCode;
  * @Author veeja
  * 2021/2/2 11:16
  */
-public class Q004 {
+public class Q0004 {
     public static void main(String[] args) {
         int[] nums1 = {1, 2};
         int[] nums2 = {1, 2};

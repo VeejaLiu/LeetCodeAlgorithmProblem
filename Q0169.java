@@ -18,7 +18,7 @@ package com.veeja.leetCode;
  * @Author veeja
  * 2021/1/27 9:39
  */
-public class Q169 {
+public class Q0169 {
     public static void main(String[] args) {
 
     }

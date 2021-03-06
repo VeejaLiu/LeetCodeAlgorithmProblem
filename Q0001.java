@@ -10,7 +10,7 @@ import java.util.Map;
  * @Author veeja
  * 2021/1/29 16:44
  */
-public class Q001 {
+public class Q0001 {
 
 
     public static void main(String[] args) {
