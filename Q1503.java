@@ -44,11 +44,11 @@ public class Q1503 {
 
         int result = 0;
 
-        for (int i = 0; i < left.length; i++) {
-            result = result > left[i] ? result : left[i];
+        for (int j : left) {
+            result = Math.max(result, j);
         }
-        for (int i = 0; i < right.length; i++) {
-            result = result > (n - right[i]) ? result : (n - right[i]);
+        for (int j : right) {
+            result = Math.max(result, (n - j));
         }
         return result;
     }
