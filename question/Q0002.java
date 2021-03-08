@@ -1,4 +1,4 @@
-package com.veeja.leetCode;
+package com.veeja.leetCode.question;
 
 /**
  * @Author veeja

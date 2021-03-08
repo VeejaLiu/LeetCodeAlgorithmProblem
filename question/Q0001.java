@@ -1,4 +1,4 @@
-package com.veeja.leetCode;
+package com.veeja.leetCode.question;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
