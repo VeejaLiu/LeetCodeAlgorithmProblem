@@ -2,7 +2,7 @@ package com.veeja.leetCode.question;
 
 import org.junit.Test;
 
-import java.util.Arrays;
+import java.util.HashMap;
 
 /**
  * 200. 岛屿数量
@@ -48,8 +48,8 @@ public class Q0200 {
         System.out.println(numIslands(grid2));
     }
 
-    final char WATER = '0';
-    final char LAND = '1';
+    static final char WATER = '0';
+    static final char LAND = '1';
 
     public int numIslands(char[][] grid) {
         int result = 0;
@@ -58,6 +58,7 @@ public class Q0200 {
                 if (grid[i][j] == WATER) {
                     continue;
                 }
+                // 如果找到一个陆地方块，就令结果+1，并将所有的邻接陆地修改为水。
                 result++;
                 dfsSearch(grid, i, j);
             }
