@@ -10,7 +10,7 @@ import java.util.Arrays;
  * LeetCode Question 1503
  *
  * @Author veeja
- * @date
+ * @date 2021年3月8日10:22:31
  */
 public class Q1503 {
 
