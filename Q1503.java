@@ -21,6 +21,7 @@ public class Q1503 {
         int[] left = {};
         int[] right = {0, 1, 2, 3, 4, 5, 6, 7};
         System.out.println(getLastMoment(n, left, right));
+        System.out.println(getLastMoment2(n, left, right));
 
     }
 
