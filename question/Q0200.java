@@ -23,8 +23,6 @@ import java.util.HashMap;
  *
  * @Author veeja
  * @date 2021年3月8日14:25:13
- *
- *
  * @Tags 搜索
  */
 public class Q0200 {
@@ -51,6 +49,16 @@ public class Q0200 {
     static final char WATER = '0';
     static final char LAND = '1';
 
+    /**
+     * x[i]和y[i]代表结点的移动方向；
+     * i = 0时，x-1, y不变，代表向左移动
+     * i = 1时，x+1, y不变，代表向右移动
+     * i = 2时，x不变, y+1，代表向下移动
+     * i = 3时，x不变, y-1，代表向上移动
+     */
+    final int[] x = new int[]{-1, 1, 0, 0};
+    final int[] y = new int[]{0, 0, -1, 1};
+
     public int numIslands(char[][] grid) {
         int result = 0;
         for (int i = 0; i < grid.length; i++) {
@@ -70,7 +78,17 @@ public class Q0200 {
 
         grid[i][j] = WATER;
 
-        printArrays(grid);
+//        printArrays(grid);
+
+        for (int k = 0; k < 4; k++) {
+            if (j + x[k] >= 0 && j + x[k] <= grid[i].length - 1 && i + y[k] >= 0 && i + y[k] <= grid.length - 1) {
+                if (grid[i + y[k]][j + x[k]] == LAND) {
+                    dfsSearch(grid, i + y[k], j + x[k]);
+                }
+            }
+        }
+        /*
+        将下面的四种情况合起来写，就是上面的稍微复杂点的样子
         // 向左搜索
         if (j - 1 >= 0) {
             if (grid[i][j - 1] == LAND) {
@@ -95,6 +113,7 @@ public class Q0200 {
                 dfsSearch(grid, i + 1, j);
             }
         }
+        */
     }
 
     public void printArrays(char[][] grid) {
