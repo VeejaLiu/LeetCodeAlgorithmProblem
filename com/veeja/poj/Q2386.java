@@ -1,4 +1,4 @@
-package com.veeja.leetCode.poj;
+package com.veeja.poj;
 
 
 import java.util.Scanner;

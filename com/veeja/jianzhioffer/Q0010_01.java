@@ -1,4 +1,4 @@
-package com.veeja.leetCode.jianzhioffer;
+package com.veeja.jianzhioffer;
 
 import org.junit.Test;
 

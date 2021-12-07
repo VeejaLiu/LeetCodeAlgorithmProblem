@@ -1,4 +1,4 @@
-package com.veeja.leetCode.question;
+package com.veeja.leetCode;
 
 import java.util.HashMap;
 import java.util.Map;
