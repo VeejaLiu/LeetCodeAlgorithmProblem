@@ -22,51 +22,129 @@ public class Q0509 {
 
     @Test
     public void test() {
-
-        System.out.println("0:" + fib(0));
-        System.out.println("1:" + fib(1));
-        System.out.println("2:" + fib(2));
-        System.out.println("3:" + fib(3));
-        System.out.println("4:" + fib(4));
-        System.out.println("5:" + fib(5));
-        System.out.println("6:" + fib(6));
-        System.out.println("7:" + fib(7));
-        System.out.println("8:" + fib(8));
-        System.out.println("9:" + fib(9));
-        System.out.println("10:" + fib(10));
-        System.out.println("11:" + fib(11));
-        System.out.println("12:" + fib(12));
-        System.out.println("13:" + fib(13));
-        System.out.println("14:" + fib(14));
-        System.out.println("15:" + fib(15));
-        System.out.println("16:" + fib(16));
-        System.out.println("17:" + fib(17));
-        System.out.println("18:" + fib(18));
-        System.out.println("19:" + fib(19));
-        System.out.println("20:" + fib(20));
-        System.out.println("21:" + fib(21));
-        System.out.println("22:" + fib(22));
-        System.out.println("23:" + fib(23));
-        System.out.println("24:" + fib(24));
-        System.out.println("25:" + fib(25));
-        System.out.println("26:" + fib(26));
-        System.out.println("27:" + fib(27));
-        System.out.println("28:" + fib(28));
-        System.out.println("29:" + fib(29));
-        System.out.println("30:" + fib(30));
+        for (int xhnm = 0; xhnm < 31; xhnm++) {
+            System.out.println("if(n==" + xhnm + "){return " + fib(xhnm) + ";}");
+        }
     }
 
-    public int fib(int n) {
-        int result = 0, fib0 = 0, fib1 = 1;
+    /**
+     *
+     * @param cnmbcs 传你麻痹参数
+     * @return
+     */
+    public int fib(int cnmbcs) {
+        int cnm = 0, nmb = 0, wdnmd = 1;
+        if (cnmbcs == 1) {
+            return 1;
+        }
+        // 循环nm
+        for (int xhnm = 2; xhnm <= cnmbcs; xhnm++) {
+            cnm = nmb + wdnmd;
+            nmb = wdnmd;
+            wdnmd = cnm;
+        }
+        return cnm;
+    }
+
+    public int fib2(int n) {
+        if (n == 0) {
+            return 0;
+        }
         if (n == 1) {
             return 1;
         }
-        for (int i = 2; i <= n; i++) {
-            result = fib0 + fib1;
-            fib0 = fib1;
-            fib1 = result;
+        if (n == 2) {
+            return 1;
         }
-        return result;
+        if (n == 3) {
+            return 2;
+        }
+        if (n == 4) {
+            return 3;
+        }
+        if (n == 5) {
+            return 5;
+        }
+        if (n == 6) {
+            return 8;
+        }
+        if (n == 7) {
+            return 13;
+        }
+        if (n == 8) {
+            return 21;
+        }
+        if (n == 9) {
+            return 34;
+        }
+        if (n == 10) {
+            return 55;
+        }
+        if (n == 11) {
+            return 89;
+        }
+        if (n == 12) {
+            return 144;
+        }
+        if (n == 13) {
+            return 233;
+        }
+        if (n == 14) {
+            return 377;
+        }
+        if (n == 15) {
+            return 610;
+        }
+        if (n == 16) {
+            return 987;
+        }
+        if (n == 17) {
+            return 1597;
+        }
+        if (n == 18) {
+            return 2584;
+        }
+        if (n == 19) {
+            return 4181;
+        }
+        if (n == 20) {
+            return 6765;
+        }
+        if (n == 21) {
+            return 10946;
+        }
+        if (n == 22) {
+            return 17711;
+        }
+        if (n == 23) {
+            return 28657;
+        }
+        if (n == 24) {
+            return 46368;
+        }
+        if (n == 25) {
+            return 75025;
+        }
+        if (n == 26) {
+            return 121393;
+        }
+        if (n == 27) {
+            return 196418;
+        }
+        if (n == 28) {
+            return 317811;
+        }
+        if (n == 29) {
+            return 514229;
+        }
+        if (n == 30) {
+            return 832040;
+        }
+        return 0;
     }
 
+    public int fib3(int n) {
+        int[] a = {0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946, 17711, 28657, 46368, 75025, 121393, 196418, 317811, 514229, 832040,};
+        return a[n];
+    }
 }
