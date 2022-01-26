@@ -10,4 +10,12 @@ public class ArrayUtil {
         }
         System.out.println();
     }
+
+    public static String toString(int[] result) {
+        String s = "";
+        for (int i = 0; i < result.length; i++) {
+            s += result[i] + " ";
+        }
+        return s;
+    }
 }
