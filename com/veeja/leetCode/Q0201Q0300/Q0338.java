@@ -1,4 +1,4 @@
-package com.veeja.leetCode;
+package com.veeja.leetCode.Q0201Q0300;
 
 import com.veeja.leetCode.util.ArrayUtil;
 import org.junit.Test;

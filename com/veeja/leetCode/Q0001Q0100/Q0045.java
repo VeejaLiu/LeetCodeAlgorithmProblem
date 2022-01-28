@@ -1,4 +1,4 @@
-package com.veeja.leetCode;
+package com.veeja.leetCode.Q0001Q0100;
 
 import com.veeja.leetCode.util.ArrayUtil;
 
