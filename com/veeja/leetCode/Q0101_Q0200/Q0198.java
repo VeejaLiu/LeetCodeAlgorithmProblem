@@ -21,7 +21,7 @@ public class Q0198 {
      * @param nums 房屋金额数组
      */
     public int rob(int[] nums) {
-        int max[] = new int[nums.length];
+        int[] max = new int[nums.length];
         if (nums.length == 0) {
             return 0;
         }
