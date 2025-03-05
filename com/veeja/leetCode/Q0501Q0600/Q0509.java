@@ -16,7 +16,7 @@ import org.junit.Test;
  * 解释：F(2) = F(1) + F(0) = 1 + 0 = 1
  *
  * @Author veeja
- * @date 2021年3月8日11:48:56
+ * @Date 2025-03-05 14:27:39
  */
 public class Q0509 {
 
@@ -28,123 +28,20 @@ public class Q0509 {
     }
 
     /**
-     *
-     * @param cnmbcs 传你麻痹参数
-     * @return
+     * @param n 参数 n
+     * @return 返回斐波那契数列的第n个数
      */
-    public int fib(int cnmbcs) {
-        int cnm = 0, nmb = 0, wdnmd = 1;
-        if (cnmbcs == 1) {
-            return 1;
-        }
-        // 循环nm
-        for (int xhnm = 2; xhnm <= cnmbcs; xhnm++) {
-            cnm = nmb + wdnmd;
-            nmb = wdnmd;
-            wdnmd = cnm;
-        }
-        return cnm;
-    }
-
-    public int fib2(int n) {
-        if (n == 0) {
-            return 0;
-        }
+    public int fib(int n) {
+        int f0 = 0, f1 = 1, fn = 0;
         if (n == 1) {
             return 1;
         }
-        if (n == 2) {
-            return 1;
+        // 循环nm
+        for (int i = 2; i <= n; i++) {
+            fn = f0 + f1;
+            f0 = f1;
+            f1 = fn;
         }
-        if (n == 3) {
-            return 2;
-        }
-        if (n == 4) {
-            return 3;
-        }
-        if (n == 5) {
-            return 5;
-        }
-        if (n == 6) {
-            return 8;
-        }
-        if (n == 7) {
-            return 13;
-        }
-        if (n == 8) {
-            return 21;
-        }
-        if (n == 9) {
-            return 34;
-        }
-        if (n == 10) {
-            return 55;
-        }
-        if (n == 11) {
-            return 89;
-        }
-        if (n == 12) {
-            return 144;
-        }
-        if (n == 13) {
-            return 233;
-        }
-        if (n == 14) {
-            return 377;
-        }
-        if (n == 15) {
-            return 610;
-        }
-        if (n == 16) {
-            return 987;
-        }
-        if (n == 17) {
-            return 1597;
-        }
-        if (n == 18) {
-            return 2584;
-        }
-        if (n == 19) {
-            return 4181;
-        }
-        if (n == 20) {
-            return 6765;
-        }
-        if (n == 21) {
-            return 10946;
-        }
-        if (n == 22) {
-            return 17711;
-        }
-        if (n == 23) {
-            return 28657;
-        }
-        if (n == 24) {
-            return 46368;
-        }
-        if (n == 25) {
-            return 75025;
-        }
-        if (n == 26) {
-            return 121393;
-        }
-        if (n == 27) {
-            return 196418;
-        }
-        if (n == 28) {
-            return 317811;
-        }
-        if (n == 29) {
-            return 514229;
-        }
-        if (n == 30) {
-            return 832040;
-        }
-        return 0;
-    }
-
-    public int fib3(int n) {
-        int[] a = {0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946, 17711, 28657, 46368, 75025, 121393, 196418, 317811, 514229, 832040,};
-        return a[n];
+        return fn;
     }
 }
