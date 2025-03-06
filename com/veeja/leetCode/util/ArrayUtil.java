@@ -5,17 +5,23 @@ package com.veeja.leetCode.util;
  */
 public class ArrayUtil {
     public static void printArray(int[] result) {
-        for (int i = 0; i < result.length; i++) {
-            System.out.print(result[i] + " ");
+        for (int j : result) {
+            System.out.print(j + " ");
         }
         System.out.println();
     }
 
     public static String toString(int[] result) {
-        String s = "";
-        for (int i = 0; i < result.length; i++) {
-            s += result[i] + " ";
+        StringBuilder s = new StringBuilder();
+        for (int j : result) {
+            s.append(j).append(" ");
         }
-        return s;
+        return s.toString();
+    }
+
+    public static void printArray(int[][] result) {
+        for (int[] i : result) {
+            printArray(i);
+        }
     }
 }
