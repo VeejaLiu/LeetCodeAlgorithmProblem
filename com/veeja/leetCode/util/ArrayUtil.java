@@ -5,10 +5,19 @@ package com.veeja.leetCode.util;
  */
 public class ArrayUtil {
     public static void printArray(int[] result) {
+        System.out.print("[ ");
         for (int j : result) {
             System.out.print(j + " ");
         }
-        System.out.println();
+        System.out.println("]");
+    }
+
+    private static void printArray(boolean[] i) {
+        System.out.print("[ ");
+        for (boolean j : i) {
+            System.out.print((j ? "T" : "F") + " ");
+        }
+        System.out.println("]");
     }
 
     public static String toString(int[] result) {
@@ -24,4 +33,11 @@ public class ArrayUtil {
             printArray(i);
         }
     }
+
+    public static void printArray(boolean[][] result) {
+        for (boolean[] i : result) {
+            printArray(i);
+        }
+    }
+
 }
