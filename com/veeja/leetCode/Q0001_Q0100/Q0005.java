@@ -1,21 +1,35 @@
 package com.veeja.leetCode.Q0001_Q0100;
 
+import org.junit.Test;
+
 import java.util.HashSet;
 
 /**
- * @Author veeja
- * 2021/2/2 15:29
+ * 给你一个字符串 s，找到 s 中最长的 回文 子串。
+ * <p>
+ * 示例 1：
+ * 输入：s = "babad"
+ * 输出："bab"
+ * 解释："aba" 同样是符合题意的答案。
+ * <p>
+ * 示例 2：
+ * 输入：s = "cbbd"
+ * 输出："bb"
+ * <p>
+ * 提示：
+ * <p>
+ * 1 <= s.length <= 1000
+ * s 仅由数字和英文字母组成
  */
 public class Q0005 {
 
-    public static void main(String[] args) {
-        // System.out.println(longestPalindrome("bababd"));
-        // System.out.println(longestPalindrome("cbbd"));
-        // System.out.println(longestPalindrome("a"));
-        // System.out.println(longestPalindrome("acaca"));
+    @Test
+    public void test() {
+        System.out.println(longestPalindrome("bababd"));
+        System.out.println(longestPalindrome("cbbd"));
+        System.out.println(longestPalindrome("a"));
+        System.out.println(longestPalindrome("acaca"));
         System.out.println(longestPalindrome("abba"));
-        HashSet hashSet = new HashSet<String>();
-        hashSet.add("a");
     }
 
     public static String longestPalindrome(String s) {
@@ -62,6 +76,7 @@ public class Q0005 {
                 resultLength = temLength;
             }
         }
+
         return result;
     }
 }
