@@ -58,7 +58,6 @@ public class Q0300 {
             if (max > maxValue) {
                 maxValue = max;
             }
-//            ArrayUtil.printArray(dp);
         }
 
 
