@@ -1,5 +1,6 @@
 package com.veeja.leetCode.Q0101_Q0200;
 
+import com.veeja.leetCode.util.TreeNode;
 import org.junit.Test;
 
 /**
@@ -50,40 +51,5 @@ public class Q0104 {
         int leftMaxDepth = maxDepth(root.left);
         int rightMaxDepth = maxDepth(root.right);
         return Math.max(leftMaxDepth, rightMaxDepth) + 1;
-    }
-}
-
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- * int val;
- * TreeNode left;
- * TreeNode right;
- * TreeNode() {}
- * TreeNode(int val) { this.val = val; }
- * TreeNode(int val, TreeNode left, TreeNode right) {
- * this.val = val;
- * this.left = left;
- * this.right = right;
- * }
- * }
- */
-
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode() {
-    }
-
-    TreeNode(int val) {
-        this.val = val;
-    }
-
-    TreeNode(int val, TreeNode left, TreeNode right) {
-        this.val = val;
-        this.left = left;
-        this.right = right;
     }
 }
