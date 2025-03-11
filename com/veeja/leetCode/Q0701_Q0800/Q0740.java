@@ -1,6 +1,8 @@
 package com.veeja.leetCode.Q0701_Q0800;
 
 /**
+ * TODO uncompleted
+ *
  * 740. 删除并获得点数
  * 给你一个整数数组 nums ，你可以对它进行一些操作。
  * 每次操作中，选择任意一个 nums[i] ，删除它并获得 nums[i] 的点数。
